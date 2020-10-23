@@ -18,7 +18,7 @@
 
 body {
     background-color: var(--bckgr-color);
-        margin: 3vw;
+    margin: 3vw;
 }
 
 
@@ -62,7 +62,7 @@ article {
     padding: 1vw;
     min-width: inherit;
 
-  width: min-content;
+    width: min-content;
 }
 
 .bike {
@@ -75,8 +75,10 @@ article {
 }
 
 #label {
-    display:flex;
+    width: 100%;
+    display: flex;
     align-items: baseline;
+    align-content: flex-start;
     border-bottom: 1px solid var(--bckgr-color);
     padding: 1.2vw 0 0.4vw 0;
 }
@@ -87,8 +89,12 @@ article {
     font-weight: 100;
     font-style: italic;
     padding: 0 1vw 1vw 1vw;
-        border: 1px solid var(--bckgr-color);
-    padding: 0.5vw;
+    border: 1px solid var(--bckgr-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 #label > .value {
@@ -129,4 +135,5 @@ button {
     text-transform: uppercase;
     padding: 0.3vw 0.5vw;
     margin-top: 1vw;
+    width: max-content;
 }
