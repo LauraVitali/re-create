@@ -20,7 +20,11 @@ function showBike(bike) {
 
     clone.querySelector("h2").textContent = bike.title.rendered;
 
-    clone.querySelector(".price").textContent = bike.tags.minprice;
+    clone.querySelector(".minpr").textContent = bike.minprice;
+
+    clone.querySelector(".maxpr").textContent = bike.maxprice;
+
+    clone.querySelector("#stock-value").textContent = bike.stock;
 
 //    clone.querySelector(".content").innerHTML = bike.content.rendered;
 
