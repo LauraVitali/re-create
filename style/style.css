@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Source+Sans+Pro:ital,wght@0,700;1,200;1,300;1,400&display=swap');
+
+/* Colours  and Fonts */
+:root {
+
+    /*    colours*/
+    --bckgr-color: #f2efea;
+    --text-color: #61605e;
+    --active-link-color: #62140e;
+    --bckgr-template-color: #ffffff;
+
+    /*    fonts*/
+    --main-font: 'Source Sans Pro', sans-serif;
+    --special-font: 'Cormorant Garamond', serif;
+
+}
+
+body {
+    background-color: var(--bckgr-color);
+        margin: 3vw;
+}
+
+.header-text {
+    color: var(--text-color);
+    font-family: var(--special-font);
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    padding: 0;
+    letter-spacing: 0.4vw;
+}
+
+#logo {
+    width: 15vw;
+    height: auto;
+}
+
+.active-link {
+    color: var(--active-link-color);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: baseline;
+}
+
+header ul li {
+    padding: 0 1vw 0 0;
+}

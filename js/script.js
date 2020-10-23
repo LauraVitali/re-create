@@ -7,13 +7,13 @@ function callback(data) {
     console.log(data)
 
     //loop thorugh them
-    data.forEach(showPost)
+    data.forEach(showBike)
 }
 
-function showPost(post) {
+function showBike(bike) {
 
     //find the template/ clone template
-    const template = document.querySelector("template#post-template").content;
+    const template = document.querySelector("template#bike-template").content;
     const clone = template.cloneNode(true);
     clone.querySelector("h1").textContent = post.title.rendered;
 
