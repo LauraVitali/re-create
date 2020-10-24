@@ -24,9 +24,14 @@ function showBike(bike) {
 
     clone.querySelector(".maxpr").textContent = bike.maxprice;
 
-    clone.querySelector("#stock-value").textContent = bike.stock;
-
-//    clone.querySelector(".content").innerHTML = bike.content.rendered;
+    if (bike.stock < 1) {
+        clone.querySelector("#stock-value").textContent = "No";
+    }
+    else if (bike.stock > 9) {
+        clone.querySelector("#stock-value").textContent = "Yes";
+    } else {
+        clone.querySelector("#stock-value").textContent = bike.stock;
+    }
 
     //append
     document.querySelector("main").appendChild(clone);
