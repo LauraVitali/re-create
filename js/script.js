@@ -22,7 +22,16 @@ function showBike(bike) {
 
     clone.querySelector(".minpr").textContent = bike.minprice;
 
-    clone.querySelector(".maxpr").textContent = bike.maxprice;
+    var maxpr = bike.maxprice;
+
+    if (maxpr == [] ) {
+        clone.querySelector("#maxpr").classList.add("hide");
+    } else {
+        clone.querySelector("#maxpr").classList.remove("hide");
+        clone.querySelector("#maxprice").textContent = bike.maxprice;
+    }
+
+//    clone.querySelector(".maxpr").textContent = bike.maxprice;
 
     if (bike.categories == 10) {
         clone.querySelector("h1").textContent = "state";

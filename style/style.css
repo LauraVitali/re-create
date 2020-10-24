@@ -109,6 +109,7 @@ article {
     color: black;
     margin: 0 1.5vw;
     display: flex;
+    align-items: baseline;
 }
 
 .maxpr {
@@ -138,6 +139,10 @@ h3 {
     margin: 0;
 }
 
+p {
+    margin: 0 0 0 3rem;
+}
+
 button {
     font-family: var(--main-font);
     font-weight: 400;
@@ -148,4 +153,8 @@ button {
     padding: 0.3vw 0.5vw;
     margin-top: 1vw;
     width: max-content;
+}
+
+.hide {
+    display: none;
 }
