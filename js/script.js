@@ -16,7 +16,7 @@ function showBike(bike) {
     const template = document.querySelector("template#bike-template").content;
     const clone = template.cloneNode(true);
 
-    clone.querySelector("h1").textContent = bike.categories;
+//    clone.querySelector("h1").textContent = bike.categories;
 
     clone.querySelector("h2").textContent = bike.title.rendered;
 
@@ -24,10 +24,15 @@ function showBike(bike) {
 
     clone.querySelector(".maxpr").textContent = bike.maxprice;
 
+    if (bike.categories == 10) {
+        clone.querySelector("h1").textContent = "state";
+    } else if (bike.categories == 9) {
+        clone.querySelector("h1").textContent = "linus";
+    }
+
     if (bike.stock < 1) {
         clone.querySelector("#stock-value").textContent = "No";
-    }
-    else if (bike.stock > 9) {
+    } else if (bike.stock > 9) {
         clone.querySelector("#stock-value").textContent = "Yes";
     } else {
         clone.querySelector("#stock-value").textContent = bike.stock;
