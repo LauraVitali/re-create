@@ -112,6 +112,11 @@ article {
     align-items: baseline;
 }
 
+#maxpr {
+        display: flex;
+    align-items: baseline;
+}
+
 .maxpr {
     padding-left: 1vw;
 }
