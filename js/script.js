@@ -18,7 +18,12 @@ function showBike(bike) {
 
 //    clone.querySelector("h1").textContent = bike.categories;
 
+    const img = clone.querySelector("img");
+    img.setAttribute("src", `${bike.image.guid}`);
+
     clone.querySelector("h2").textContent = bike.title.rendered;
+
+    clone.querySelector("#swatches").textContent = bike.tags;
 
     clone.querySelector(".minpr").textContent = bike.minprice;
 
