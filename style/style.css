@@ -161,6 +161,11 @@ button {
     width: max-content;
 }
 
+button:hover {
+    color: var(--bckgr-color);
+    background-color: var(--active-link-color);
+}
+
 .hide {
     display: none;
 }
